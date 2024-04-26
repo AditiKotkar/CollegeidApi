@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>College ID Input Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      form {
+        width: 300px;
+        margin: 0 auto;
+      }
+      label {
+        display: block;
+        margin-top: 20px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/verify" method="post">
+      <label for="collegeId">College ID:</label>
+      <input type="text" id="collegeId" name="collegeId" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
